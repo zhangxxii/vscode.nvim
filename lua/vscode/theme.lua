@@ -528,8 +528,8 @@ theme.set_highlights = function(opts)
 --    hl(0, 'CmpItemMenu', { fg = c.vscPopupFront, bg = 'NONE' })
 --    hl(0, 'CmpItemAbbr', { fg = c.vscFront, bg = 'NONE' })
     hl(0, 'CmpItemAbbrDeprecated', { fg = c.vscCursorDark, bg = c.vscPopupBack, strikethrough = true })
-    hl(0, 'CmpItemAbbrMatch', { fg = isDark and c.vscMediumBlue or c.vscDarkBlue, bg = 'NONE', bold = true })
-    hl(0, 'CmpItemAbbrMatchFuzzy', { fg = isDark and c.vscMediumBlue or c.vscDarkBlue, bg = 'NONE', bold = true })
+    hl(0, 'CmpItemAbbrMatch', { fg = isDark and c.vscMediumBlue or c.vscDarkBlue, bg = 'NONE', bold = false })
+    hl(0, 'CmpItemAbbrMatchFuzzy', { fg = isDark and c.vscMediumBlue or c.vscDarkBlue, bg = 'NONE', bold = false })
 
     -- Dashboard
     hl(0, 'DashboardHeader', { fg = c.vscBlue, bg = 'NONE' })
