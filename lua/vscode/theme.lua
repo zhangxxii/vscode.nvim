@@ -429,9 +429,9 @@ theme.set_highlights = function(opts)
     hl(0, 'yamlConstant', { fg = c.vscBlue, bg = 'NONE' })
 
     -- Gitgutter
-    hl(0, 'GitGutterAdd', { fg = c.vscGreen, bg = 'NONE' })
-    hl(0, 'GitGutterChange', { fg = c.vscYellow, bg = 'NONE' })
-    hl(0, 'GitGutterDelete', { fg = c.vscRed, bg = 'NONE' })
+--   hl(0, 'GitGutterAdd', { fg = c.vscGreen, bg = 'NONE' })
+--   hl(0, 'GitGutterChange', { fg = c.vscYellow, bg = 'NONE' })
+--   hl(0, 'GitGutterDelete', { fg = c.vscRed, bg = 'NONE' })
 
     -- Git Signs
     hl(0, 'GitSignsAdd', { fg = c.vscGreen, bg = 'NONE' })
@@ -441,30 +441,31 @@ theme.set_highlights = function(opts)
     hl(0, 'GitSignsChangeLn', { fg = c.vscBack, bg = c.vscYellow })
     hl(0, 'GitSignsDeleteLn', { fg = c.vscBack, bg = c.vscRed })
 
-    -- NvimTree
-    hl(0, 'NvimTreeRootFolder', { fg = c.vscFront, bg = 'NONE', bold = true })
-    hl(0, 'NvimTreeGitDirty', { fg = c.vscYellow, bg = 'NONE' })
-    hl(0, 'NvimTreeGitNew', { fg = c.vscGreen, bg = 'NONE' })
-    hl(0, 'NvimTreeImageFile', { fg = c.vscViolet, bg = 'NONE' })
-    hl(0, 'NvimTreeEmptyFolderName', { fg = c.vscGray, bg = 'NONE' })
-    hl(0, 'NvimTreeFolderName', { fg = c.vscFront, bg = 'NONE' })
-    hl(0, 'NvimTreeSpecialFile', { fg = c.vscPink, bg = 'NONE', underline = true })
-    hl(0, 'NvimTreeNormal', { fg = c.vscFront, bg = opts.disable_nvimtree_bg and c.vscBack or c.vscLeftDark })
-    hl(0, 'NvimTreeCursorLine', { fg = 'NONE', bg = opts.disable_nvimtree_bg and c.vscCursorDarkDark or c.vscLeftMid })
-    hl(0, 'NvimTreeVertSplit', { fg = opts.disable_nvimtree_bg and c.vscSplitDark or c.vscBack, bg = c.vscBack })
-    hl(0, 'NvimTreeEndOfBuffer', { fg = opts.disable_nvimtree_bg and c.vscCursorDarkDark or c.vscLeftDark })
-    hl(
-        0,
-        'NvimTreeOpenedFolderName',
-        { fg = 'NONE', bg = opts.disable_nvimtree_bg and c.vscCursorDarkDark or c.vscLeftDark }
-    )
-    hl(0, 'NvimTreeGitRenamed', { fg = c.vscGitRenamed, bg = 'NONE' })
-    hl(0, 'NvimTreeGitIgnored', { fg = c.vscGitIgnored, bg = 'NONE' })
-    hl(0, 'NvimTreeGitDeleted', { fg = c.vscGitDeleted, bg = 'NONE' })
-    hl(0, 'NvimTreeGitStaged', { fg = c.vscGitStageModified, bg = 'NONE' })
-    hl(0, 'NvimTreeGitMerge', { fg = c.vscGitUntracked, bg = 'NONE' })
-    hl(0, 'NvimTreeGitDirty', { fg = c.vscGitModified, bg = 'NONE' })
-    hl(0, 'NvimTreeGitNew', { fg = c.vscGitAdded, bg = 'NONE' })
+
+--    -- NvimTree
+--    hl(0, 'NvimTreeRootFolder', { fg = c.vscFront, bg = 'NONE', bold = true })
+--    hl(0, 'NvimTreeGitDirty', { fg = c.vscYellow, bg = 'NONE' })
+--    hl(0, 'NvimTreeGitNew', { fg = c.vscGreen, bg = 'NONE' })
+--    hl(0, 'NvimTreeImageFile', { fg = c.vscViolet, bg = 'NONE' })
+--    hl(0, 'NvimTreeEmptyFolderName', { fg = c.vscGray, bg = 'NONE' })
+--    hl(0, 'NvimTreeFolderName', { fg = c.vscFront, bg = 'NONE' })
+--    hl(0, 'NvimTreeSpecialFile', { fg = c.vscPink, bg = 'NONE', underline = true })
+--    hl(0, 'NvimTreeNormal', { fg = c.vscFront, bg = opts.disable_nvimtree_bg and c.vscBack or c.vscLeftDark })
+--    hl(0, 'NvimTreeCursorLine', { fg = 'NONE', bg = opts.disable_nvimtree_bg and c.vscCursorDarkDark or c.vscLeftMid })
+--    hl(0, 'NvimTreeVertSplit', { fg = opts.disable_nvimtree_bg and c.vscSplitDark or c.vscBack, bg = c.vscBack })
+--    hl(0, 'NvimTreeEndOfBuffer', { fg = opts.disable_nvimtree_bg and c.vscCursorDarkDark or c.vscLeftDark })
+--    hl(
+--        0,
+--        'NvimTreeOpenedFolderName',
+--        { fg = 'NONE', bg = opts.disable_nvimtree_bg and c.vscCursorDarkDark or c.vscLeftDark }
+--    )
+--    hl(0, 'NvimTreeGitRenamed', { fg = c.vscGitRenamed, bg = 'NONE' })
+--    hl(0, 'NvimTreeGitIgnored', { fg = c.vscGitIgnored, bg = 'NONE' })
+--    hl(0, 'NvimTreeGitDeleted', { fg = c.vscGitDeleted, bg = 'NONE' })
+--    hl(0, 'NvimTreeGitStaged', { fg = c.vscGitStageModified, bg = 'NONE' })
+--    hl(0, 'NvimTreeGitMerge', { fg = c.vscGitUntracked, bg = 'NONE' })
+--    hl(0, 'NvimTreeGitDirty', { fg = c.vscGitModified, bg = 'NONE' })
+--    hl(0, 'NvimTreeGitNew', { fg = c.vscGitAdded, bg = 'NONE' })
 
     -- Bufferline
     hl(0, 'BufferLineIndicatorSelected', { fg = c.vscLeftDark, bg = 'NONE' })
@@ -510,22 +511,22 @@ theme.set_highlights = function(opts)
     hl(0, 'LspReferenceWrite', { fg = 'NONE', bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
 
     -- COC.nvim
-    hl(0, 'CocHighlightText', { fg = 'NONE', bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
-    hl(0, 'CocHighlightRead', { fg = 'NONE', bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
-    hl(0, 'CocHighlightWrite', { fg = 'NONE', bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
+--   hl(0, 'CocHighlightText', { fg = 'NONE', bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
+--   hl(0, 'CocHighlightRead', { fg = 'NONE', bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
+--   hl(0, 'CocHighlightWrite', { fg = 'NONE', bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
 
     -- Nvim compe
-    hl(0, 'CmpItemKindVariable', { fg = c.vscLightBlue, bg = 'NONE' })
-    hl(0, 'CmpItemKindInterface', { fg = c.vscLightBlue, bg = 'NONE' })
-    hl(0, 'CmpItemKindText', { fg = c.vscLightBlue, bg = 'NONE' })
-    hl(0, 'CmpItemKindFunction', { fg = c.vscPink, bg = 'NONE' })
-    hl(0, 'CmpItemKindMethod', { fg = c.vscPink, bg = 'NONE' })
-    hl(0, 'CmpItemKindKeyword', { fg = c.vscFront, bg = 'NONE' })
-    hl(0, 'CmpItemKindProperty', { fg = c.vscFront, bg = 'NONE' })
-    hl(0, 'CmpItemKindUnit', { fg = c.vscFront, bg = 'NONE' })
-    hl(0, 'CmpItemKindConstructor', { fg = c.vscUiOrange, bg = 'NONE' })
-    hl(0, 'CmpItemMenu', { fg = c.vscPopupFront, bg = 'NONE' })
-    hl(0, 'CmpItemAbbr', { fg = c.vscFront, bg = 'NONE' })
+--    hl(0, 'CmpItemKindVariable', { fg = c.vscLightBlue, bg = 'NONE' })
+--    hl(0, 'CmpItemKindInterface', { fg = c.vscLightBlue, bg = 'NONE' })
+--    hl(0, 'CmpItemKindText', { fg = c.vscLightBlue, bg = 'NONE' })
+--    hl(0, 'CmpItemKindFunction', { fg = c.vscPink, bg = 'NONE' })
+--    hl(0, 'CmpItemKindMethod', { fg = c.vscPink, bg = 'NONE' })
+--    hl(0, 'CmpItemKindKeyword', { fg = c.vscFront, bg = 'NONE' })
+--    hl(0, 'CmpItemKindProperty', { fg = c.vscFront, bg = 'NONE' })
+--    hl(0, 'CmpItemKindUnit', { fg = c.vscFront, bg = 'NONE' })
+--    hl(0, 'CmpItemKindConstructor', { fg = c.vscUiOrange, bg = 'NONE' })
+--    hl(0, 'CmpItemMenu', { fg = c.vscPopupFront, bg = 'NONE' })
+--    hl(0, 'CmpItemAbbr', { fg = c.vscFront, bg = 'NONE' })
     hl(0, 'CmpItemAbbrDeprecated', { fg = c.vscCursorDark, bg = c.vscPopupBack, strikethrough = true })
     hl(0, 'CmpItemAbbrMatch', { fg = isDark and c.vscMediumBlue or c.vscDarkBlue, bg = 'NONE', bold = true })
     hl(0, 'CmpItemAbbrMatchFuzzy', { fg = isDark and c.vscMediumBlue or c.vscDarkBlue, bg = 'NONE', bold = true })
